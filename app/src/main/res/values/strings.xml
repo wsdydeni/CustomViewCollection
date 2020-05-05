@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">CustomViewCollection</string>
+    <string name="success_text">拼图成功: 耗时0.12秒,打败了10%的用户!</string>
+    <string name="failure_text">拼图失败: 请重新拖动</string>
+    <string name="button">Button</string>
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProgressView">
+        <attr name="progress" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="outer_circle_color" format="reference|color" />
+        <attr name="pie_color" format="reference|color" />
+        <attr name="outer_circle_border_width" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="SeekBar">
+        <attr name="backgroundColor" format="reference|color"/>
+        <attr name="dragColor" format="reference|color" />
+        <attr name="startBitmap" format="reference"/>
+        <attr name="endBitmap" format="reference"/>
+        <attr name="text" format="string"/>
+        <attr name="textColor" format="reference|color"/>
+    </declare-styleable>
+</resources>
