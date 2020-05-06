@@ -31,7 +31,7 @@ class SlidePuzzle : ConstraintLayout {
 
     fun setBitmap(bitmap: Bitmap) {
         mPuzzle.setBitmap(bitmap)
-        mSlideBar.setProgressListener { progress,useTime,verify ->
+        mSlideBar.setOnDragListener { progress, useTime, verify ->
             //同步滑块位置
             mPuzzle.setProgress(progress)
             //停止滑动时验证

@@ -36,7 +36,7 @@ class SlideBar : View {
 
     private var _onDrag : ((Float, Float?, Boolean) -> Unit)? = null //滑动监听
 
-    fun setProgressListener(listener : (Float,Float?,Boolean) -> Unit) {
+    fun setOnDragListener(listener : (Float, Float?, Boolean) -> Unit) {
         _onDrag = listener
     }
 

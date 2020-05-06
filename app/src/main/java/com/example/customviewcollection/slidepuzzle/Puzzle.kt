@@ -174,8 +174,8 @@ class Puzzle : View {
         super.onSizeChanged(w, h, oldw, oldh)
         mWidth = w
         mHeight = h
-        rect.set(0,0,w,h)
         createPath()
+        rect.set(0,0,w,h)
         linearGradient = LinearGradient(mWidth.toFloat() / 2.toFloat(),0f,0f,mHeight.toFloat(),
             intArrayOf(Color.BLACK,Color.WHITE,Color.BLACK),null,Shader.TileMode.CLAMP)
         mSuccessPaint.shader = linearGradient
