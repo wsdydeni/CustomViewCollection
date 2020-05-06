@@ -2,6 +2,7 @@ package com.example.customviewcollection.banner
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Toast
 import com.example.customviewcollection.R
 import kotlinx.android.synthetic.main.activity_banner.*
 
@@ -17,7 +18,12 @@ class BannerActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_banner)
-        banner.setAdapter(BannerAdapter())
+        banner.setAdapter(BannerAdapter().apply {
+            setOnClickListener { position ->
+                Toast.makeText(this@BannerActivity,"点击位置: $position", Toast.LENGTH_SHORT).show()
+            }
+        })
         banner.setData(list)
+
     }
 }

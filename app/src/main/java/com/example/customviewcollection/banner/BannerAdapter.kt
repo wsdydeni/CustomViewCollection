@@ -14,6 +14,12 @@ const val MAX_VALUE = 500
 
 class BannerAdapter : RecyclerView.Adapter<BannerAdapter.MyViewHolder>() {
 
+    private var _onClick : ((Int) -> Unit)? = null
+
+    fun setOnClickListener(listener : (Int) ->Unit) {
+        _onClick = listener
+    }
+
     private var mList = arrayListOf<BannerInfo>()
 
     fun setData(list : List<BannerInfo>) {
@@ -36,6 +42,9 @@ class BannerAdapter : RecyclerView.Adapter<BannerAdapter.MyViewHolder>() {
             load(mList[realPosition].image).
             transform(CenterCrop(),RoundedCorners(20)).
             into(image)
+        holder.itemView.setOnClickListener {
+            _onClick?.invoke(realPosition)
+        }
     }
 
     class MyViewHolder(view: View) : RecyclerView.ViewHolder(view)
