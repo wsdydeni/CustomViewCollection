@@ -14,6 +14,7 @@ class ProgressViewActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_progress_view)
+        progress_view.setMax(100)
         progress_view.setOnProgressListener { progress ->
             if(progress == progress_view.getMaxProgress()) {
                 Glide.with(this).load(imageUrl).into(image_view)

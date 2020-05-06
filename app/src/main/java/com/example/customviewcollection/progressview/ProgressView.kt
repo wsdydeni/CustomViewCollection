@@ -162,15 +162,15 @@ class ProgressView : View {
         postInvalidate()
     }
 
-//    @Synchronized
-//    fun setMax(max: Int) {
-//        var max1 = max
-//        if (max1 < 0) {
-//            max1 = 0
-//        }
-//        mMax = max1
-//        postInvalidate()
-//    }
+    @Synchronized
+    fun setMax(max: Int) {
+        var max1 = max
+        if (max1 < 0) {
+            max1 = 0
+        }
+        mMax = max1
+        postInvalidate()
+    }
 
     constructor(context: Context) : super(context) { initView(null)}
 
