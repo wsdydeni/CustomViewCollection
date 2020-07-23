@@ -3,4 +3,5 @@
     <string name="success_text">拼图成功: 耗时0.12秒,打败了10%的用户!</string>
     <string name="failure_text">拼图失败: 请重新拖动</string>
     <string name="button">Button</string>
+    <string name="ems_text">Ems比较像一种单位或者权重，比如maxEms设为10时，大概可以展示20个英文字符，10个中文字符（中英文不同的标点符号权重不同，比如英文逗号可以展示将近50个，但中文逗号只能展示10个，而英文的*号可以展示20个）。</string>
 </resources>
