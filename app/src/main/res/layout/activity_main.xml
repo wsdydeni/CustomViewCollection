@@ -3,8 +3,60 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.example.customviewcollection.draglayout.DragLayout
+    <RelativeLayout
+        android:id="@+id/layout_drag_header"
+        android:layout_alignParentTop="true"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="50dp">
+
+        <Button
+            android:text="选择"
+            android:id="@+id/choose_btn"
+            android:layout_alignParentEnd="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <Button
+            android:visibility="gone"
+            android:text="旋转方向"
+            android:layout_marginEnd="10dp"
+            android:layout_toStartOf="@id/choose_btn"
+            android:id="@+id/choose_direction_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    </RelativeLayout>
+
+    <com.example.customviewcollection.draglayout.TestViewGroup
+        android:id="@+id/layout_drag_content"
+        android:layout_below="@id/layout_drag_header"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:background="#03A9F4"
+                android:gravity="center"
+                android:text="一号"
+                android:textColor="@android:color/white"
+                android:textSize="16sp" />
+        </FrameLayout>
+
+        <TextView
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:background="@android:color/holo_green_light"
+            android:gravity="center"
+            android:text="二号"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="200dp"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+    </com.example.customviewcollection.draglayout.TestViewGroup>
 
 </RelativeLayout>
