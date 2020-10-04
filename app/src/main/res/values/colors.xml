@@ -6,4 +6,10 @@
     <color name="orange">#FF2912</color>
     <color name="paleBlue">#C7E1F3</color>
     <color name="paleGrey">#CBB5BE</color>
+
+
+    <color name="back">#B4B4B4</color>
+    <color name="loading">#9CC2F4</color>
+    <color name="success">#66EE78</color>
+    <color name="failure">#E83A30</color>
 </resources>

@@ -8,6 +8,14 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <style name="Dialog_Fullscreen">
+        <item name="android:windowNoTitle">true</item>
+        <item name="android:backgroundDimEnabled">false</item>
+        <item name="android:windowIsTranslucent">false</item>
+        <item name="android:backgroundDimAmount">0.6</item>
+        <item name="android:windowBackground">#9000</item>
+    </style>
+
     <style name="common_spinner">
         <!--设置弹窗背景为 系统设置的 应用主色调 在application 的colorPrimay 中配置的颜色, actionBar toolbar 默认使用这个为背景颜色-->
         <item name="android:popupBackground">?attr/colorAccent</item>

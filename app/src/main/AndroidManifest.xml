@@ -6,7 +6,6 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
-        android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:networkSecurityConfig="@xml/network_security_config"
@@ -14,25 +13,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
-        <activity android:name=".slidepuzzle.SlidePuzzleActivity">
 
-        </activity>
-        <activity android:name=".seekbar.SeekBarActivity">
+        <activity android:name=".slidepuzzle.SlidePuzzleActivity" />
+        <activity android:name=".seekbar.SeekBarActivity"/>
+        <activity android:name=".progressview.ProgressViewActivity"/>
+        <activity android:name=".banner.BannerActivity"/>
 
-        </activity>
-        <activity android:name=".progressview.ProgressViewActivity">
-
-        </activity>
-        <activity android:name=".banner.BannerActivity">
-
-        </activity>
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
     </application>
 
 </manifest>
