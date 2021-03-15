@@ -17,7 +17,9 @@
         <activity android:name=".slidepuzzle.SlidePuzzleActivity" />
         <activity android:name=".seekbar.SeekBarActivity"/>
         <activity android:name=".progressview.ProgressViewActivity"/>
-        <activity android:name=".banner.BannerActivity"/>
+        <activity android:name=".banner.BannerActivity">
+
+        </activity>
 
         <activity android:name=".MainActivity" >
             <intent-filter>

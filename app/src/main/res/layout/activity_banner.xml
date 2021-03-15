@@ -5,9 +5,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:clipChildren="false"
+    android:layerType="software"
+    android:background="@android:color/transparent"
     tools:context=".banner.BannerActivity">
 
     <com.example.customviewcollection.banner.Banner
+        android:clipChildren="false"
         android:id="@+id/banner"
         android:layout_marginStart="20dp"
         android:layout_marginEnd="20dp"

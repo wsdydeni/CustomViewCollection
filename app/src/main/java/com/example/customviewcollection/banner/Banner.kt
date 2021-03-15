@@ -95,29 +95,39 @@ class Banner : RelativeLayout {
             resources.getDrawable(R.drawable.item_indicator_normal,null))
         mViewPager2.adapter = mAdapter
         ScrollDurationManger.reflectLayoutManager(mViewPager2,800)
-        if(data.size > 1) mViewPager2.setCurrentItem(MAX_VALUE / 2 - ((MAX_VALUE / 2) % data.size) + 1,false)
+        if(data.size > 1) {
+            mViewPager2.setCurrentItem(MAX_VALUE / 2 - ((MAX_VALUE / 2) % data.size) + 1,false)
+        }
         mViewPager2.clipToPadding = false
         mViewPager2.clipChildren = false
-        mViewPager2.offscreenPageLimit = data.size
+        mViewPager2.offscreenPageLimit = 1
         mViewPager2.getChildAt(0).overScrollMode = RecyclerView.OVER_SCROLL_NEVER
         mViewPager2.unregisterOnPageChangeCallback(mOnPageChangeCallback)
         mViewPager2.registerOnPageChangeCallback(mOnPageChangeCallback)
-        val pageTransformer = CompositePageTransformer()
-        pageTransformer.addTransformer(MarginPageTransformer(40))
-        pageTransformer.addTransformer { page, position ->
-            when {
-                position < -1 -> {
-                    page.scaleY = 0.9f
-                }
-                position <= 1 -> {
-                    val scale = max(0.9f,1 - abs(position))
-                    page.scaleY = scale
-                }
-                else -> {
-                    page.scaleY = 0.9f
-                }
+        mViewPager2.apply {
+            val recyclerView= getChildAt(0) as RecyclerView
+            recyclerView.apply {
+                // setting padding on inner RecyclerView puts overscroll effect in the right place
+                setPadding(0, 0, 120, 0)
+                clipChildren = false
             }
         }
+        val pageTransformer = CompositePageTransformer()
+        pageTransformer.addTransformer(MarginPageTransformer(20))
+//        pageTransformer.addTransformer { page, position ->
+//            when {
+//                position < -1 -> {
+//                    page.scaleY = 0.9f
+//                }
+//                position <= 1 -> {
+//                    val scale = max(0.9f,1 - abs(position))
+//                    page.scaleY = scale
+//                }
+//                else -> {
+//                    page.scaleY = 0.9f
+//                }
+//            }
+//        }
         mViewPager2.setPageTransformer(pageTransformer)
         startLoop()
     }
