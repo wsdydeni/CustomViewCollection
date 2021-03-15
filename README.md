@@ -5,6 +5,8 @@
 
 [Viewpager实现的Banner](https://github.com/wsdydeni/CustomViewCollection/tree/master/app/src/main/java/com/example/customviewcollection/banner)
 
+[HorizontalScrollView实现的Banner](https://github.com/wsdydeni/CustomViewCollection/tree/master/app/src/main/java/com/example/customviewcollection/horizontal)
+
 ## 仿微博饼状加载图
 
 [自定义View画圆更新进度](https://github.com/wsdydeni/CustomViewCollection/tree/master/app/src/main/java/com/example/customviewcollection/progressview)
