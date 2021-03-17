@@ -5,4 +5,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
+    <com.example.customviewcollection.mzbanner.MZBanner
+        android:id="@+id/banner"
+        android:layout_marginStart="20sp"
+        android:layout_marginEnd="20sp"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

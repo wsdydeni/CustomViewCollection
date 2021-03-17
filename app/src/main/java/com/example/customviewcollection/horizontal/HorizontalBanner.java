@@ -31,7 +31,7 @@ public class HorizontalBanner extends HorizontalScrollView implements View.OnCli
 
     public static final long AUTO_PLAY_DURATION = 4000L;
 
-    private final AutoPlayRunnable autoPlayRunnable = new AutoPlayRunnable(this);
+    public final AutoPlayRunnable autoPlayRunnable = new AutoPlayRunnable(this);
 
     private VelocityTracker velocityTracker;
 
@@ -75,18 +75,18 @@ public class HorizontalBanner extends HorizontalScrollView implements View.OnCli
 
     private static class AutoPlayRunnable implements Runnable {
 
-        private final WeakReference<HorizontalBanner> HorizontalBannerWeakReference;
+        private final WeakReference<HorizontalBanner> horizontalBannerWeakReference;
 
-        public AutoPlayRunnable(HorizontalBanner HorizontalBanner) {
-            HorizontalBannerWeakReference = new WeakReference<>(HorizontalBanner);
+        public AutoPlayRunnable(HorizontalBanner horizontalBanner) {
+            horizontalBannerWeakReference = new WeakReference<>(horizontalBanner);
         }
 
         @Override
         public void run() {
-            HorizontalBanner HorizontalBanner = HorizontalBannerWeakReference.get();
-            if(HorizontalBanner != null) {
-                HorizontalBanner.loadNextPage();
-                HorizontalBanner.postDelayed(HorizontalBanner.autoPlayRunnable, AUTO_PLAY_DURATION);
+            HorizontalBanner horizontalBanner = horizontalBannerWeakReference.get();
+            if(horizontalBanner != null) {
+                horizontalBanner.loadNextPage();
+                horizontalBanner.postDelayed(horizontalBanner.autoPlayRunnable, AUTO_PLAY_DURATION);
             }
         }
     }
