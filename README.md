@@ -3,9 +3,13 @@
 
 ## 轮播图
 
-[Viewpager实现的Banner](https://github.com/wsdydeni/CustomViewCollection/tree/master/app/src/main/java/com/example/customviewcollection/banner)
+[ViewPager2-Banner](https://github.com/wsdydeni/CustomViewCollection/tree/master/app/src/main/java/com/example/customviewcollection/banner)
 
-[HorizontalScrollView实现的Banner](https://github.com/wsdydeni/CustomViewCollection/tree/master/app/src/main/java/com/example/customviewcollection/horizontal)
+[HorizontalScrollView-Banner](https://github.com/wsdydeni/CustomViewCollection/tree/master/app/src/main/java/com/example/customviewcollection/horizontal)
+
+[ViewPager-Banner](https://github.com/wsdydeni/CustomViewCollection/tree/master/app/src/main/java/com/example/customviewcollection/mzbanner)
+
+最终版本 仿魅族效果 细节拉满
 
 ## 仿微博饼状加载图
 
