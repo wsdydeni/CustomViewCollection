@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.example.customviewcollection.mzbanner.MZBanner
+    <wsdydeni.widget.custom.mzbanner.MZBanner
         android:id="@+id/banner"
         android:layout_marginStart="20sp"
         android:layout_marginEnd="20sp"

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.example.customviewcollection.slidepuzzle.Puzzle
+    <wsdydeni.widget.custom.slidepuzzle.Puzzle
         android:id="@+id/puzzle"
         android:layout_width="0dp"
         android:layout_height="0dp"
@@ -34,7 +34,7 @@
         app:layout_constraintBottom_toBottomOf="@id/puzzle"
         tools:targetApi="o" />
 
-    <com.example.customviewcollection.slidepuzzle.SlideBar
+    <wsdydeni.widget.custom.slidepuzzle.SlideBar
         android:id="@+id/slide_bar"
         android:layout_width="0dp"
         android:layout_height="0dp"

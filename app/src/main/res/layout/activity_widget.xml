@@ -7,7 +7,7 @@
     tools:context=".widget.WidgetActivity"
     >
 
-    <com.example.customviewcollection.widget.CircleProgressBar
+    <wsdydeni.widget.custom.widget.CircleProgressBar
         android:id="@+id/circle_progress_view"
         app:circleMax="100"
         app:circleProgress="0"

@@ -9,7 +9,7 @@
     android:background="@android:color/transparent"
     tools:context=".banner.BannerActivity">
 
-    <com.example.customviewcollection.banner.Banner
+    <wsdydeni.widget.custom.banner.Banner
         android:clipChildren="false"
         android:id="@+id/banner"
         android:layout_marginStart="20dp"

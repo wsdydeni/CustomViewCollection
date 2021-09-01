@@ -31,7 +31,7 @@
         app:layout_constraintBottom_toBottomOf="@id/dialog_loading_background"
         app:layout_constraintTop_toBottomOf="@id/dialog_loading_view"/>
 
-    <com.example.customviewcollection.loadingview.LoadingCircleView
+    <wsdydeni.widget.custom.loadingview.LoadingCircleView
         android:id="@+id/dialog_loading_view"
         android:layout_width="100dp"
         android:layout_height="100dp"

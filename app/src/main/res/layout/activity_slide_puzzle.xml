@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".slidepuzzle.SlidePuzzleActivity">
 
-    <com.example.customviewcollection.slidepuzzle.SlidePuzzle
+    <wsdydeni.widget.custom.slidepuzzle.SlidePuzzle
         android:id="@+id/slide_puzzle"
         android:layout_marginTop="50dp"
         android:layout_marginStart="10dp"

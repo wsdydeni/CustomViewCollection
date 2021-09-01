@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     tools:context=".seekbar.SeekBarActivity">
 
-    <com.example.customviewcollection.seekbar.SeekBar
+    <wsdydeni.widget.custom.seekbar.SeekBar
         android:id="@+id/verify_seekbar"
         app:text="向右滑呀"
         app:textColor="@color/colorAccent"
