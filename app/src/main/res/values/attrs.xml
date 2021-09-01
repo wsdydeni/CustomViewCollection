@@ -24,4 +24,15 @@
         <attr name="failureColor" format="color"/>
         <attr name="paintWidth" format="float"/>
     </declare-styleable>
+
+    <declare-styleable name="CircleProgressBar">
+        <attr name="barColor" format="color"/>
+        <attr name="rimColor" format="color"/>
+        <attr name="barWidth" format="dimension|reference"/>
+        <attr name="centerTextSize" format="dimension|reference"/>
+        <attr name="centerTextColor" format="color"/>
+        <attr name="isShowProgress" format="boolean"/>
+        <attr name="circleMax" format="integer"/>
+        <attr name="circleProgress" format="integer"/>
+    </declare-styleable>
 </resources>
