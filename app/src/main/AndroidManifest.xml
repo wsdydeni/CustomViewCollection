@@ -14,16 +14,20 @@
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
         <activity android:name=".widget.WidgetActivity">
+
+        </activity>
+        <activity android:name=".slidepuzzle.SlidePuzzleActivity" />
+        <activity android:name=".seekbar.SeekBarActivity" />
+        <activity android:name=".progressview.ProgressViewActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".slidepuzzle.SlidePuzzleActivity" />
-        <activity android:name=".seekbar.SeekBarActivity" />
-        <activity android:name=".progressview.ProgressViewActivity" />
-        <activity android:name=".banner.BannerActivity"></activity>
+        <activity android:name=".banner.BannerActivity">
+
+        </activity>
         <activity android:name=".MainActivity">
 
         </activity>
