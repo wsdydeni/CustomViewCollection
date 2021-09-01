@@ -1,4 +1,4 @@
-package wsdydeni.widget.custom.banner
+package wsdydeni.widget.banner
 
 import android.content.Context
 import android.graphics.drawable.Drawable
@@ -6,11 +6,7 @@ import android.util.AttributeSet
 import androidx.appcompat.widget.AppCompatImageView
 import androidx.appcompat.widget.LinearLayoutCompat
 
-/*
- * Date: 2020/4/29
- * Author: wsdydeni
- * Description: 自定义指示器
- */
+
 class IndicatorView : LinearLayoutCompat {
 
     private var mSelectColor: Drawable? = null
@@ -18,11 +14,11 @@ class IndicatorView : LinearLayoutCompat {
 
     private var mAlpha = 0f
 
-    constructor(context: Context?) : super(context)
+    constructor(context: Context) : super(context)
 
-    constructor(context: Context?, attrs: AttributeSet?) : super(context, attrs)
+    constructor(context: Context, attrs: AttributeSet?) : super(context, attrs)
 
-    constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr)
+    constructor(context: Context, attrs: AttributeSet?, defStyleAttr: Int) : super(context, attrs, defStyleAttr)
 
     fun initView(indicatorCount: Int, alpha: Float ,selectPosition: Int, selectDrawable: Drawable?, normalDrawable: Drawable?): IndicatorView {
         mSelectColor = selectDrawable

@@ -1,21 +1,16 @@
-package wsdydeni.widget.custom.banner
+package wsdydeni.widget.banner
 
 import android.content.Context
 import android.os.Handler
 import android.util.AttributeSet
 import android.widget.RelativeLayout
+import androidx.core.content.res.ResourcesCompat
 import androidx.recyclerview.widget.RecyclerView
 import androidx.viewpager2.widget.CompositePageTransformer
 import androidx.viewpager2.widget.MarginPageTransformer
 import androidx.viewpager2.widget.ViewPager2
-import kotlinx.android.synthetic.main.layout_banner.view.*
-import wsdydeni.widget.custom.R
 
-/*
- * Date: 2020/4/29
- * Author: wsdydeni
- * Description: Banner
- */
+
 class Banner : RelativeLayout {
 
     private lateinit var mViewPager2: ViewPager2
@@ -79,18 +74,23 @@ class Banner : RelativeLayout {
     }
 
     fun setCurrentItem(position : Int,smoothScroll : Boolean) {
-        if(mAdapter?.getListSize()!! > 1) {
-            mViewPager2.setCurrentItem(MAX_VALUE / 2 - MAX_VALUE / 2 % mAdapter!!.getListSize() + 1 + position, smoothScroll)
-        }else {
-            mViewPager2.setCurrentItem(position,smoothScroll)
+        if (mAdapter?.getListSize()!! > 1) {
+            mViewPager2.setCurrentItem(
+                MAX_VALUE / 2 - MAX_VALUE / 2 % mAdapter!!.getListSize() + 1 + position,
+                smoothScroll
+            )
+        } else {
+            mViewPager2.setCurrentItem(position, smoothScroll)
         }
     }
 
     private fun initBannerData(data : List<BannerInfo>) {
-        indicatorView.initView(data.size,0.6f,
+        indicatorView.initView(
+            data.size,0.6f,
             MAX_VALUE / 2 - ((MAX_VALUE / 2) % data.size) + 1,
-            resources.getDrawable(R.drawable.item_indicator_select,null),
-            resources.getDrawable(R.drawable.item_indicator_normal,null))
+            ResourcesCompat.getDrawable(resources,R.drawable.item_indicator_select,null),
+            ResourcesCompat.getDrawable(resources,R.drawable.item_indicator_normal,null)
+        )
         mViewPager2.adapter = mAdapter
         ScrollDurationManger.reflectLayoutManager(mViewPager2,800)
         if(data.size > 1) {
@@ -146,8 +146,8 @@ class Banner : RelativeLayout {
 
     private fun initView() {
         inflate(context, R.layout.layout_banner,this)
-        mViewPager2 = viewpager2
-        indicatorView = indicator_view
+        mViewPager2 = findViewById(R.id.viewpager2)
+        indicatorView = findViewById(R.id.indicator_view)
     }
 
     init { initView() }

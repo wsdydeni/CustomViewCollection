@@ -1,4 +1,4 @@
-package wsdydeni.widget.custom.banner
+package wsdydeni.widget.banner
 
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.LinearSmoothScroller

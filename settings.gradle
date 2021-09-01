@@ -1,2 +1,3 @@
 rootProject.name='CustomViewCollection'
 include ':app'
+include ':banner'

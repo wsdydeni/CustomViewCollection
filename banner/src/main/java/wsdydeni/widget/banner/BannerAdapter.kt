@@ -1,4 +1,4 @@
-package wsdydeni.widget.custom.banner
+package wsdydeni.widget.banner
 
 import android.view.LayoutInflater
 import android.view.View
@@ -8,7 +8,6 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.bumptech.glide.load.resource.bitmap.CenterCrop
 import com.bumptech.glide.load.resource.bitmap.RoundedCorners
-import wsdydeni.widget.custom.R
 
 const val MAX_VALUE = 500
 
