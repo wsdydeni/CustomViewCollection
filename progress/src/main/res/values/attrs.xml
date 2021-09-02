@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ProgressView">
+        <attr name="progress" format="integer" />
+        <attr name="max" format="integer" />
+        <attr name="outer_circle_color" format="reference|color" />
+        <attr name="pie_color" format="reference|color" />
+        <attr name="outer_circle_border_width" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="CircleProgressBar">
+        <attr name="barColor" format="color"/>
+        <attr name="rimColor" format="color"/>
+        <attr name="barWidth" format="dimension|reference"/>
+        <attr name="centerTextSize" format="dimension|reference"/>
+        <attr name="centerTextColor" format="color"/>
+        <attr name="isShowProgress" format="boolean"/>
+        <attr name="circleMax" format="integer"/>
+        <attr name="circleProgress" format="integer"/>
+    </declare-styleable>
+</resources>

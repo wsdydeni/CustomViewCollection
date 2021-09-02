@@ -1,3 +1,6 @@
+include ':progress'
+include ':seekbar'
+include ':puzzle'
 rootProject.name='CustomViewCollection'
 include ':app'
 include ':banner'

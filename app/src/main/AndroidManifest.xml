@@ -13,20 +13,16 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         tools:ignore="AllowBackup">
-        <activity android:name=".widget.WidgetActivity">
-
-        </activity>
-        <activity android:name=".slidepuzzle.SlidePuzzleActivity" />
-        <activity android:name=".seekbar.SeekBarActivity" />
-        <activity android:name=".progressview.ProgressViewActivity" >
+        <activity android:name=".PuzzleActivity" />
+        <activity android:name=".BannerActivity" />
+        <activity android:name=".SeekBarActivity" />
+        <activity android:name=".ProgressActivity" />
+        <activity android:name=".WidgetActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
-        <activity android:name=".MainActivity">
-
         </activity>
     </application>
 

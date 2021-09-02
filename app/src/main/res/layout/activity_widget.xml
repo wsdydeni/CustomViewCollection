@@ -1,23 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:padding="20dp"
+    android:orientation="vertical"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    tools:context=".widget.WidgetActivity"
-    >
+    android:layout_height="match_parent">
 
-    <wsdydeni.widget.custom.widget.CircleProgressBar
-        android:id="@+id/circle_progress_view"
-        app:circleMax="100"
-        app:circleProgress="0"
-        app:centerTextSize="13dp"
-        app:isShowProgress="true"
-        app:barWidth="5dp"
-        app:barColor="@android:color/holo_blue_light"
-        app:centerTextColor="@android:color/holo_blue_light"
-        android:layout_centerInParent="true"
-        android:layout_width="50dp"
-        android:layout_height="50dp"/>
+    <com.google.android.material.button.MaterialButton
+        style="?attr/materialButtonOutlinedStyle"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/go_banner"
+        android:textColor="@color/colorPrimary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/banner_activity"
+        />
 
-</RelativeLayout>
+    <com.google.android.material.button.MaterialButton
+        style="?attr/materialButtonOutlinedStyle"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/go_progress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/progress_activity"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:textColor="@color/colorPrimary"
+        style="?attr/materialButtonOutlinedStyle"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/go_puzzle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/puzzle_activity"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:textColor="@color/colorPrimary"
+        style="?attr/materialButtonOutlinedStyle"
+        android:textSize="18sp"
+        android:padding="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:id="@+id/go_seekbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/seekbar_activity"
+        />
+
+</LinearLayout>

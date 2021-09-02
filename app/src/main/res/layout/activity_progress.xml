@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProgressActivity">
+
+    <wsdydeni.widget.progress.CircleProgressBar
+        android:id="@+id/circle_progress_bar"
+        android:layout_marginTop="20dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:barColor="@color/colorAccent"
+        app:centerTextColor="@color/colorAccent"
+        app:centerTextSize="18dp"
+        app:barWidth="2dp"
+        app:circleMax="100"
+        app:circleProgress="0"
+        app:isShowProgress="true"
+        android:layout_width="100dp"
+        android:layout_height="100dp"/>
+
+    <ImageView
+        android:background="@drawable/image_background"
+        android:layout_marginTop="30dp"
+        android:id="@+id/image_view"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/circle_progress_bar"
+        app:layout_constraintHeight_percent="0.2"
+        app:layout_constraintWidth_percent="0.4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <wsdydeni.widget.progress.ProgressView
+        android:id="@+id/progress_view"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        app:max="100"
+        app:progress="0"
+        app:pie_color="#f1f1f1"
+        app:outer_circle_color="#f1f1f1"
+        app:outer_circle_border_width="1dp"
+        app:layout_constraintBottom_toBottomOf="@id/image_view"
+        app:layout_constraintLeft_toLeftOf="@id/image_view"
+        app:layout_constraintRight_toRightOf="@id/image_view"
+        app:layout_constraintTop_toTopOf="@id/image_view"
+        />
+
+    <com.google.android.material.button.MaterialButton
+        android:textColor="@color/colorPrimary"
+        style="?attr/materialButtonOutlinedStyle"
+        android:id="@+id/restart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="@string/restart"
+        android:layout_marginTop="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/image_view"
+        />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
